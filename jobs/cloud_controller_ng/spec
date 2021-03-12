@@ -177,6 +177,7 @@ provides:
   - cc.opi.client_cert
   - cc.opi.client_key
   - cc.opi.enabled
+  - cc.opi.experimental_enable_crds
   - cc.opi.opi_staging
   - cc.opi.url
   - cc.packages.app_package_directory_key
@@ -647,6 +648,9 @@ properties:
 
   cc.opi.enabled:
     description: "Set to true to enable running apps on Kubernetes, using Eirini"
+    default: false
+  cc.opi.experimental_enable_crds
+    description: "Set to true to enable experimental Eirini CRDs - LRPs and Tasks"
     default: false
   cc.opi.opi_staging:
     description: "Set to true to enable staging apps on Kubernetes, using Eirini"
